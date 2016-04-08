@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>panel.Panel</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="panel-module.html">Module&nbsp;panel</a> ::
+        Class&nbsp;Panel
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="panel.Panel-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class Panel</h1><p class="nomargin-top"><span class="codelink"><a href="panel-pysrc.html#Panel">source&nbsp;code</a></span></p>
+<p>Clase Panel clase principal que visualiza el usuario con todos los 
+  datos necesarios para la administracion de la cademia Esta clase se 
+  conecta a la base de datos para aministrar la academia, buscando, 
+  insertando, borrando los estudiantes que se registren a traves de 
+  formularios generados con el propio software</p>
+
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Instance Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-InstanceMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="__init__"></a><span class="summary-sig-name">__init__</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">user</span>)</span><br />
+      metodo __init__ Construcotr de la clase que hace visualizar la 
+      interfaz realizada con glade a&#241;adimos las se&#241;ales definiendolas en el
+      parametro signals y se lo a&#241;adimos al builder por ultimo, traemos los
+      objetos del xml que usemos :param user: usuario que con el que se ha 
+      aceptado la entrada</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="panel-pysrc.html#Panel.__init__">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="on_changed"></a><span class="summary-sig-name">on_changed</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">selection</span>)</span><br />
+      metodo on_changed metodo para detectar los cambios de selecion en el 
+      treeview Asigna en los EditText los parametros correspondientes con 
+      el elemento selecionado :param selection: parametro con la fila del 
+      treeview selecionada :return: retorna la id del elemento selecionado 
+      en la variable de clase last_id</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="panel-pysrc.html#Panel.on_changed">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="menu_warning"></a><span class="summary-sig-name">menu_warning</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">text</span>)</span><br />
+      Metodo menu_warning Metodo para crear menus emergentes completamente 
+      personalizados :param text: tubla con disintos parametros texto 
+      :return: retorna una ventana emergente con los textos dados en la 
+      tupla text</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="panel-pysrc.html#Panel.menu_warning">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="close"></a><span class="summary-sig-name">close</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">widget</span>,
+        <span class="summary-sig-arg">none</span>)</span><br />
+      metodo close Metodo para cerrar el widget abierto :param widget: 
+      parametro imprescindible :param none: parametro imprescindible, no lo
+      suo :return: detruye la ventana</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="panel-pysrc.html#Panel.close">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="print_monthly_bill"></a><span class="summary-sig-name">print_monthly_bill</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">control</span>)</span><br />
+      metodo print_monthly_bill metodo para generar un informe si esta 
+      selecionado una fila en el treeview :param control: parametro para 
+      llevar el control del metodo :return: retorna un informe</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="panel-pysrc.html#Panel.print_monthly_bill">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="update_list"></a><span class="summary-sig-name">update_list</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Metodo update_list metodo para imprimir en el treeview con todos 
+      datos de la base de datos :return: retorna un treeview</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="panel-pysrc.html#Panel.update_list">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="clean_inserts"></a><span class="summary-sig-name">clean_inserts</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Metodo clean_inserts Metodo para limpiar los tres text fields 
+      :return: retorna los tres textfields en blanco</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="panel-pysrc.html#Panel.clean_inserts">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="raise_error"></a><span class="summary-sig-name">raise_error</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">string</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string"></code><code class="variable-quote">'</code></span>)</span><br />
+      Metodo raise_error metodo usado para insertar un string dado en el 
+      label con color rojo raise_error :param string: Texto para introducir
+      en el label :return: retorna el label con el mensaje introducido</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="panel-pysrc.html#Panel.raise_error">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="b_borrar"></a><span class="summary-sig-name">b_borrar</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">control</span>)</span><br />
+      Metodo borrar dependiendo de los parametros que hayamos introducido 
+      en los textfields, borramos los elementos, o elemento que coincida 
+      exactamente con lo deseado :param control: parametro para llevar el 
+      control del metodo :return: retorna la lista del treeview sin el 
+      elemento borrado</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="panel-pysrc.html#Panel.b_borrar">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="b_insertar"></a><span class="summary-sig-name">b_insertar</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">control</span>)</span><br />
+      Metodo insertar Lo primero es comprobar que no existe la id 
+      introducida, y en su defecto, guardar la ultima id para asignarsela a
+      la nueva inserci&#243;n (si la id insertada manualmente ya existe se rompe
+      el metodo despues de insertar un aviso en el label Si todo esta bien,
+      dependiendo de los parametros que se hayan introducido en los 
+      treeview hacemos una insercion u otra :param control: parametros para
+      llevar el control del metodo :return: vuelve a retornar un treeview 
+      con todos los elementos de la base de datos</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="panel-pysrc.html#Panel.b_insertar">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="b_buscar"></a><span class="summary-sig-name">b_buscar</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">control</span>)</span><br />
+      Metodo buscar Dependiendo del texto que rellenemos en los textfields 
+      hacemos un select u otro para mostrar los resultados en el treeview 
+      :param control: parametro para llevar control :return: retorna la 
+      lista para el treeview con los parametros que coinciden en la base de
+      datos</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="panel-pysrc.html#Panel.b_buscar">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== STATIC METHODS ==================== -->
+<a name="section-StaticMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Static Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-StaticMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="print_new_registration"></a><span class="summary-sig-name">print_new_registration</span>(<span class="summary-sig-arg">control</span>)</span><br />
+      metodo print_new_registration imprime un peque&#241;o formulario para que 
+      los estudiantes se registren en la academia a traves de papel :param 
+      control: parametro para llevar el control del metodo :return: retorna
+      un informe</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="panel-pysrc.html#Panel.print_new_registration">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS VARIABLES ==================== -->
+<a name="section-ClassVariables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Class Variables</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-ClassVariables"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="db"></a><span class="summary-name">db</span> = <code title="dbapi.connect(&quot;database.db&quot;)">dbapi.connect(&quot;database.db&quot;)</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="cursor"></a><span class="summary-name">cursor</span> = <code title="db.cursor()">db.cursor()</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="last_id"></a><span class="summary-name">last_id</span> = <code title="0">0</code>
+    </td>
+  </tr>
+</table>
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Tue Apr  5 22:41:31 2016
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>
